@@ -58,7 +58,6 @@ public class Start extends ClassProperties {
 	private void login() throws InterruptedException {
 		Thread.sleep(10000);
 		// declare javascript executer object
-		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,300)", "");
 		// add username
 		loginPage.userName.sendKeys(ExcelUtility.getUserName());
